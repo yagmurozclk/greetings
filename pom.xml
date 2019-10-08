@@ -62,7 +62,7 @@
                         <config>
                             <fmp-service>
                                 <name>myservice</name>
-                                <port>8080:8181</port>
+                                <port>8181:8081</port>
                             </fmp-service>
                         </config>
                     </enricher>
