@@ -57,13 +57,23 @@
 <!--                <configuration>-->
 <!--                    <composeFile>${project.basedir}/docker-compose</composeFile>-->
 <!--                </configuration>-->
+                <configuration>
+                    <enricher>
+                        <config>
+                            <fmp-service>
+                                <name>myservice</name>
+                                <port>8080:8181</port>
+                            </fmp-service>
+                        </config>
+                    </enricher>
+                </configuration>
                 <executions>
                     <execution>
                         <id>fmp</id>
                         <goals>
                             <goal>resource</goal>
-                            <goal>helm</goal>
                             <goal>build</goal>
+                            <goal>deploy</goal>
                         </goals>
                     </execution>
                 </executions>
