@@ -54,9 +54,9 @@
                 <groupId>io.fabric8</groupId>
                 <artifactId>fabric8-maven-plugin</artifactId>
                 <version>3.5.28</version>
-                <configuration>
-                    <composeFile>docker-compose.yml</composeFile>
-                </configuration>
+<!--                <configuration>-->
+<!--                    <composeFile>${project.basedir}/docker-compose</composeFile>-->
+<!--                </configuration>-->
                 <executions>
                     <execution>
                         <id>fmp</id>
